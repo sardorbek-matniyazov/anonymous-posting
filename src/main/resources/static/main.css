@@ -6,5 +6,8 @@ body {
     background: #007bff;
 }
 .text-muted i {
+    margin-right: 10px;
+    font-size: 20px;
     color: #007bff;
+    align-items: center;
 }
