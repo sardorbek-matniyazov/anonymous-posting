@@ -2,6 +2,10 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/bootstrap.js">
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/main.css">
     <link th:href="@{/bootstrap.js}"/>
     <link rel="stylesheet" th:href="@{/bootstrap.css}" type="text/css"/>
     <link rel="stylesheet" th:href="@{/main.css}" type="text/css"/>
@@ -37,7 +41,7 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted"><i onclick="like(this)" class="bi bi-heart bi-heart-fill"></i></small>
                 </div>
             </div>
             <div class="card">
@@ -47,7 +51,7 @@
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted"><i onclick="like(this)" class="bi bi-heart bi-heart-fill"></i></small>
                 </div>
             </div>
             <div class="card">
@@ -57,10 +61,15 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
+                    <small class="text-muted"><i onclick="like(this)" class="bi bi-heart bi-heart-fill"></i></small>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function like(element) {
+            element.classList.toggle("bi-heart");
+        }
+    </script>
 </body>
 </html>
