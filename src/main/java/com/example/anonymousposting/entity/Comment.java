@@ -18,11 +18,12 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String text;
+    @Column(nullable = false, length = 1000000)
+    private String postText;
 
     private Date date;
 
-    private Integer like;
+    private Integer reaction;
 
     @ManyToOne
     private Article article;

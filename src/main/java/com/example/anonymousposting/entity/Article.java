@@ -18,14 +18,20 @@ public class Article {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String text;
+    @Column(nullable = false, length = 100000)
+    private String postText;
+
+    @Column(nullable = false)
+    private String title;
 
     private Date date;
 
-    private Integer like = 0;
+    private Integer reaction = 0;
 
-    private String member = "Unknown";
+    @ManyToOne
+    private Member member;
 
+    @Column
     private Integer numberComment = 0;
 
     @OneToOne

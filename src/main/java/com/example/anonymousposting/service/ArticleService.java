@@ -16,12 +16,14 @@ public class ArticleService {
     private final ArticleRepository repository;
     private final AttachmentService attachmentService;
 
-    public Integer save(MultipartFile file, HttpServletRequest request) {
+    public Article save(MultipartFile file, HttpServletRequest request) {
         Attachment photo = attachmentService.save(file);
+        System.out.println(photo);
         return repository.save(Article.builder()
-                .text(request.getAttribute("text").toString())
+                .postText(request.getParameter("textarea"))
+                .title("main title")
                 .attachment(photo)
                 .date(new Date())
-                .build()).getId();
+                .build());
     }
 }

@@ -20,7 +20,7 @@ public class AttachmentService {
 
     @SneakyThrows
     public Attachment save(MultipartFile file) {
-        if (!file.isEmpty()){
+        if (file != null && !file.isEmpty()){
             String string = UUID.randomUUID().toString();
             String[] split = file.getOriginalFilename().split("\\.");
             string += "." + split[split.length - 1];
