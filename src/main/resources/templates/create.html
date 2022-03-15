@@ -2,6 +2,8 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/main.css">
     <link rel="stylesheet" th:href="@{/bootstrap.css}" type="text/css"/>
     <link rel="stylesheet" th:href="@{/main.css}" type="text/css"/>
     <title>Title</title>
@@ -10,7 +12,7 @@
 <form class="card-view" th:action="@{/newPost}">
     <div class="form-group">
         <label for="exampleFormControlTextarea1">Type to post</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+        <textarea id="tet" class="form-control" id="exampleFormControlTextarea1"  value="" rows="12"></textarea>
     </div>
     <div class="custom-file">
         <label for="exampleFormControlTextarea1"> Select photo for description </label>
@@ -18,8 +20,18 @@
         <label class="custom-file-label" for="customFile">Choose file</label>
     </div>
     <div style="margin-top: 20px">
-        <input class="custom-file btn-outline-danger my-2 my-sm-0" type="submit">
+        <input onclick="val()" class="custom-file btn-outline-danger my-2 my-sm-0" type="submit">
     </div>
 </form>
+
+<script>
+    function val() {
+        filee = document.getElementById("customFile").value
+        if(filee == "") alert('xato');
+        else alert("to'g'ri");
+        ele = document.getElementById('tet').value;
+
+    }
+</script>
 </body>
 </html>
