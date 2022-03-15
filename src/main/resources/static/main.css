@@ -5,9 +5,19 @@ body {
     margin-top: 20px;
     background: #007bff;
 }
+.text-muted {
+    height: 20px;
+    align-items: flex-start;
+}
 .text-muted i {
-    margin-right: 10px;
-    font-size: 20px;
+    font-size: 21px;
     color: #007bff;
-    align-items: center;
+    margin-right: 10px;
+}
+.text-muted i:nth-child(2) {
+    font-size: 22px;
+}
+.text-muted button {
+    float: right;
+    font-size: 16px;
 }
