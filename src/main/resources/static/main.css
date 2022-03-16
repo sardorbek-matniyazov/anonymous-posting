@@ -24,10 +24,10 @@ body {
 .card-deck {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0ch;
+    grid-gap: 0;
 }
 .card-deck {
-    margin: 8px 0px;
+    margin: 8px 0;
 }
 .card-deck .card {
     margin: 8px;

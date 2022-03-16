@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.Files;
 
 @RestController
 @AllArgsConstructor
@@ -23,4 +22,5 @@ public class PhotoController {
         File file = service.getFile(name);
         FileCopyUtils.copy(new FileInputStream(file), response.getOutputStream());
     }
+
 }
