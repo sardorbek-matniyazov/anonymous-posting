@@ -35,3 +35,20 @@ body {
 .card img {
     width: 100%;
 }
+.sign {
+    display: flex;
+    justify-content: space-between;
+}
+.sign input{
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.sign select, option {
+    border: none;
+    outline: none;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}

@@ -31,14 +31,13 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
 
     <div class="card-view">
         <div class="card-deck" th:each="post: ${posts}">
-            
             <div class="card">
                 <img class="card-img-top" th:src="@{'/getImage/'+${post.imageName}}" alt="Card image cap">
                 <div class="card-body">
