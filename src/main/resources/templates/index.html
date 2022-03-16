@@ -3,10 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/bootstrap.js">
-    <link rel="stylesheet" href="../static/bootstrap.css">
-    <link rel="stylesheet" href="../static/icon/bootstrap-icons.css">
-    <link rel="stylesheet" href="../static/main.css">
     <link th:href="@{/bootstrap.js}" />
     <link rel="stylesheet" th:href="@{/bootstrap.css}" type="text/css" />
     <link rel="stylesheet" th:href="@{/main.css}" type="text/css" />
@@ -37,43 +33,13 @@
     </nav>
 
     <div class="card-view">
-        <div class="card-deck">
+        <div class="card-deck" th:each="post: ${posts}">
             <div class="card">
+                <img class="card-img-top" th:attr="src=@{'/downloadedImages/' + ${post.imageName}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">
-                        <i onclick="like(this)" class="bi bi-heart bi-heart-fill"></i>
-                        <i class="bi bi-chat-dots"></i>
-                        <button class="btn btn-outline-primary">View</button>
-                    </small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" th:src="@{/downloadedImages/5ac86208-0249-447f-b238-a7cca1570c42.jpeg}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    <h5 class="card-title" th:text="${post.title}">title</h5>
+                    <p class="card-text" th:text="${post.postText}">This card has supporting text below as a natural lead-in to additional content.
                     </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">
-                        <i onclick="like(this)" class="bi bi-heart bi-heart-fill"></i>
-                        <i class="bi bi-chat-dots"></i>
-                        <button class="btn btn-outline-primary">View</button>
-                    </small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">
@@ -85,11 +51,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function like(element) {
-            element.classList.toggle("bi-heart");
-        }
-    </script>
 </body>
 
 </html>

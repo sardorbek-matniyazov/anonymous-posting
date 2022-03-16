@@ -24,7 +24,7 @@ public class Article {
     @Column(nullable = false)
     private String title;
 
-    private Date date;
+    private String date;
 
     private Integer reaction = 0;
 
@@ -34,6 +34,5 @@ public class Article {
     @Column
     private Integer numberComment = 0;
 
-    @OneToOne
-    private Attachment attachment;
+    private String imageName;
 }
