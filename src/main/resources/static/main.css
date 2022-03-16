@@ -33,3 +33,6 @@ body {
 .card-deck .card {
     margin: 0 8px;
 }
+.card img {
+    width: 100%;
+}
