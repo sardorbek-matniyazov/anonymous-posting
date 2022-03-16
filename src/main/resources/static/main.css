@@ -21,8 +21,7 @@ body {
     float: right;
     font-size: 16px;
 }
-.card-view {
-    /* float: left; */
+.card-deck {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0ch;
@@ -31,7 +30,7 @@ body {
     margin: 8px 0px;
 }
 .card-deck .card {
-    margin: 0 8px;
+    margin: 8px;
 }
 .card img {
     width: 100%;
