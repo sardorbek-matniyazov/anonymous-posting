@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/bootstrap.css">
     <link rel="stylesheet" href="../static/main.css">
-    <link rel="stylesheet" th:href="@{/bootstrap.css}" type="text/css"/>
-    <link rel="stylesheet" th:href="@{/main.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/main.css}" type="text/css" />
     <title>Title</title>
 </head>
+
 <body class="card-view">
-<h1 th:text="${text}"></h1>
-<form class="card-view" th:action="@{/newPost}" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <textarea class="form-control" th:text="${text}" name="textarea" rows="12"></textarea>
-    </div>
-    <div class="custom-file">
-        <input type="file" name="file" class="custom-file-input">
-        <label class="custom-file-label">Choose file</label>
-        <input class="input-group-text" type="text" name="title" id="inputGroup-sizing-lg">Large</input>
-    </div>
-    <div style="margin-top: 20px">
-        <input class="custom-file btn-outline-danger my-2 my-sm-0" type="submit">
-    </div>
-</form>
+    <h1 th:text="${text}"></h1>
+    <form class="card-view" th:action="@{/newPost}" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <div class="sign">
+                <!-- <input type="text" name="title" id="inputGroup-sizing-lg" placeholder="Bo'limni tanlang"></input> -->
+                <select>
+                    <option>Hikoya</option>
+                    <option>To'qima</option>
+                  </select>
+                <div>
+                    <input type="text" name="login" id="" placeholder="login">
+                    <input type="password" name="parol" id="" placeholder="password">
+                </div>
+            </div>
+            <textarea class="form-control" th:text="${text}" name="textarea" rows="12"></textarea>
+        </div>
+        <div class="custom-file">
+            <input type="file" name="file" class="custom-file-input">
+            <label class="custom-file-label">Choose file</label>
+        </div>
+        <div style="margin-top: 20px">
+            <input class="custom-file btn-danger my-2 my-sm-0" type="submit">
+        </div>
+    </form>
 </body>
+
 </html>
