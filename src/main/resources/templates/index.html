@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/bootstrap.js">
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/icon/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/main.css">
     <link th:href="@{/bootstrap.js}" />
     <link rel="stylesheet" th:href="@{/bootstrap.css}" type="text/css" />
     <link rel="stylesheet" th:href="@{/main.css}" type="text/css" />
@@ -43,7 +47,76 @@
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">
-                        <i onclick="like(this)" class="bi bi-heart bi-heart-fill"></i>
+                        <i class="bi bi-heart bi-heart-fill"></i>
+                        <i class="bi bi-chat-dots"></i>
+                        <button class="btn btn-outline-primary">View</button>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck" th:each="post: ${posts}">
+            <div class="card">
+                <img class="card-img-top" th:src="@{'/getImage/'+${post.imageName}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${post.title}">title</h5>
+                    <p class="card-text" th:text="${post.postText}">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        <i class="bi bi-heart bi-heart-fill"></i>
+                        <i class="bi bi-chat-dots"></i>
+                        <button class="btn btn-outline-primary">View</button>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck" th:each="post: ${posts}">
+            <div class="card">
+                <img class="card-img-top" th:src="@{'/getImage/'+${post.imageName}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${post.title}">title</h5>
+                    <p class="card-text" th:text="${post.postText}">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        <i class="bi bi-heart bi-heart-fill"></i>
+                        <i class="bi bi-chat-dots"></i>
+                        <button class="btn btn-outline-primary">View</button>
+                    </small>
+                </div>
+            </div>
+        </div>
+
+            <div class="card-deck" th:each="post: ${posts}">
+                <div class="card">
+                <img class="card-img-top" th:src="@{'/getImage/'+${post.imageName}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${post.title}">title</h5>
+                    <p class="card-text" th:text="${post.postText}">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        <i class="bi bi-heart bi-heart-fill"></i>
+                        <i class="bi bi-chat-dots"></i>
+                        <button class="btn btn-outline-primary">View</button>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck" th:each="post: ${posts}">
+            <div class="card">
+                <img class="card-img-top" th:src="@{'/getImage/'+${post.imageName}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${post.title}">title</h5>
+                    <p class="card-text" th:text="${post.postText}">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        <i class="bi bi-heart bi-heart-fill"></i>
                         <i class="bi bi-chat-dots"></i>
                         <button class="btn btn-outline-primary">View</button>
                     </small>

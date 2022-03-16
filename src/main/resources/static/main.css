@@ -21,3 +21,15 @@ body {
     float: right;
     font-size: 16px;
 }
+.card-view {
+    /* float: left; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0ch;
+}
+.card-deck {
+    margin: 8px 0px;
+}
+.card-deck .card {
+    margin: 0 8px;
+}
