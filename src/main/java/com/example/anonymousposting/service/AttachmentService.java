@@ -8,6 +8,7 @@ import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -37,5 +38,9 @@ public class AttachmentService {
             return save;
         }
         return null;
+    }
+
+    public File getFile(String name) {
+        return new File(Constants.imagesPath + name);
     }
 }
