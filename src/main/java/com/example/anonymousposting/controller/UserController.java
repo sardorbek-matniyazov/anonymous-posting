@@ -8,4 +8,5 @@ import org.springframework.stereotype.Controller;
 @AllArgsConstructor
 public class UserController {
     private final MemberService service;
+
 }

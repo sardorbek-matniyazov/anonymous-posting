@@ -16,4 +16,9 @@ public class MainController {
         model.addAttribute("posts", service.getall());
         return "index";
     }
+
+    @GetMapping(value = "/createUser")
+    public String createUser(){
+        return "createUser";
+    }
 }
