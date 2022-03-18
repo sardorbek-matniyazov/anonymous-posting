@@ -2,6 +2,7 @@ package com.example.anonymousposting.service;
 
 import com.example.anonymousposting.entity.Article;
 import com.example.anonymousposting.entity.Attachment;
+import com.example.anonymousposting.entity.Member;
 import com.example.anonymousposting.repository.ArticleRepository;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
@@ -17,11 +18,17 @@ import java.util.List;
 @AllArgsConstructor
 public class ArticleService {
     private final ArticleRepository repository;
+    private final MemberService memberService;
     private final AttachmentService attachmentService;
 
     @SneakyThrows
     public Article save(MultipartFile file, HttpServletRequest request) {
         Attachment photo = attachmentService.save(file);
+        Member member = memberService.getByNameAndPassword(
+                request.getParameter("username"),
+                request.getParameter("password")
+        );
+
         return repository.save(Article.builder()
                 .postText(request.getParameter("textarea"))
                 .title(request.getParameter("title"))

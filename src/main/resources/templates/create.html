@@ -15,14 +15,21 @@
     <form class="card-view" th:action="@{/newPost}" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <div class="sign">
-                <!-- <input type="text" name="title" id="inputGroup-sizing-lg" placeholder="Bo'limni tanlang"></input> -->
                 <div>
-                    <input type="text" name="title" placeholder="title">
-                    <input type="text" name="login" placeholder="login">
-                    <input type="password" name="parol" placeholder="password">
+                    <label>
+                        <input type="text" name="title" placeholder="title">
+                    </label>
+                    <label>
+                        <input type="text" name="username" placeholder="login">
+                    </label>
+                    <label>
+                        <input type="password" name="password" placeholder="password">
+                    </label>
                 </div>
             </div>
-            <textarea class="form-control" th:text="${text}" name="textarea" rows="12"></textarea>
+            <label>
+                <textarea class="form-control" th:text="${text}" name="textarea" rows="12"></textarea>
+            </label>
         </div>
         <div class="custom-file">
             <input type="file" name="file" class="custom-file-input">
