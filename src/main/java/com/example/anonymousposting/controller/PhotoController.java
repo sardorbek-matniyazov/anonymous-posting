@@ -22,5 +22,4 @@ public class PhotoController {
         File file = service.getFile(name);
         FileCopyUtils.copy(new FileInputStream(file), response.getOutputStream());
     }
-
 }

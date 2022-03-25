@@ -1,0 +1,45 @@
+body {
+    background: url("https://www.ok-magazine.ru/files/media_wysiwyg/velikobritaniya.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    padding-top: 100px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.card-img {
+    top: 100px;
+    position: fixed;
+
+}
+.card-img img{
+    width: 400px;
+    height: auto;
+    margin-right: 90px;
+    border-radius: 10px;
+}
+.card-com {
+    margin-left: 450px;
+    width: auto;
+}
+.card-text {
+    letter-spacing: 1px;
+    width: 50%;
+    overflow: scroll;
+    font-size: 18px;
+    height: 100%;
+    top: 110px;
+    position: fixed;
+}
+.card-text::-webkit-scrollbar {
+    display: none;
+}
+.card-title {
+    top: 50px;
+    position: fixed;
+    z-index: 11;
+    text-align: center;
+    left: 40%;
+}

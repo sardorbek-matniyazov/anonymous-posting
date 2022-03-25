@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -21,7 +20,7 @@ public class Comment {
     @Column(nullable = false, length = 1000000)
     private String postText;
 
-    private Date date;
+    private String date;
 
     private Integer reaction;
 
