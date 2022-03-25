@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bd78cf1-c3f7-4f72-8488-349a73240f1d" name="Changes" comment="hello vcs">
-      <change beforePath="$PROJECT_DIR$/aaa.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="AnonymousPostingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="anonymous-posting" />
@@ -56,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648204777082</updated>
-      <workItem from="1648204778326" duration="3004000" />
+      <workItem from="1648204778326" duration="3780000" />
     </task>
     <task id="LOCAL-00001" summary="hello vcs">
       <created>1648207984131</created>
