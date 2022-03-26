@@ -1,0 +1,19 @@
+.container {
+    margin-top: 50px;
+}
+.comment-input {
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: 0; */
+    width: 450px;
+    /* text-align: center; */
+    position: relative;
+}
+.comment-input textarea {
+    padding: 7px;
+    outline: none;
+}
+.comment-input button{
+    position: absolute;
+    left: 0;
+}
