@@ -13,7 +13,23 @@
     padding: 7px;
     outline: none;
 }
-.comment-input button{
-    position: absolute;
-    left: 0;
+.comment-show {
+    color: white;
+    display: grid;
+    grid-gap: 0ch;
+    margin-top: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card:nth-child(1n) {
+    background-color: blue;
+}
+.card:nth-child(2n) {
+    background-color: tomato;
+}
+.card:nth-child(5n) {
+    background-color: green;
+}
+.card:nth-child(4n) {
+    color: black;
+    background-color: yellow;
 }
