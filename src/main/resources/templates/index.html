@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../static/bootstrap.css">
     <link rel="stylesheet" href="../static/main.css">
     <link rel="stylesheet" th:href="@{/icon/bootstrap-icons.css}">
@@ -67,9 +68,19 @@
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">
+                        <input type="checkbox" id="chec">
                         <i class="bi bi-heart bi-heart-fill"></i>
-                        <i class="bi bi-chat-dots"></i>
+                        <label for="chec">
+                            <i class="bi bi-chat-dots"></i>
+                        </label>
                         <button class="btn btn-outline-primary"><a th:href="@{/view(id=${post.id})}">View</a></button>
+                        <div class="input-group comment">
+                            <input type="text" class="form-control" placeholder="Comment . . ." />
+                            <div class="input-group-append" id="button-addon4">
+                              <button class="btn btn-outline-secondary" type="button">Send</button>
+                              <button class="btn btn-outline-secondary" type="button">More..</button>
+                            </div>
+                          </div>
                     </small>
                 </div>
             </div>

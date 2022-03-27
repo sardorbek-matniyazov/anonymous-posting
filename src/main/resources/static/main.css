@@ -61,3 +61,33 @@ body {
 #lorem {
     display: none;
 }
+.card-footer {
+    position: relative;
+}
+.card-footer #chec {
+    display: none;
+}
+.comment {
+    top: 24px;
+    width: 280px;
+    left: 85px;
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 0.25rem;
+    background-color: white;
+    transition: all .4s ease;
+    opacity: 0;
+}
+.comment input {
+    outline: none;
+}
+.card-footer #chec[type = 'checkbox']:checked ~ .comment{
+    top: 12px;
+    left: 85px;
+    visibility: visible;
+    opacity: 1;
+}
+.card-footer #chec[type = 'checkbox']:checked ~ button{
+    display: none;
+}
