@@ -75,11 +75,13 @@
                         </label>
                         <button class="btn btn-outline-primary"><a th:href="@{/view(id=${post.id})}">View</a></button>
                         <div class="input-group comment">
-                            <input type="text" class="form-control" placeholder="Comment . . ." />
-                            <div class="input-group-append" id="button-addon4">
-                              <button class="btn btn-outline-secondary" type="button">Send</button>
-                              <button class="btn btn-outline-secondary" type="button">More..</button>
-                            </div>
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="Comment . . ." />
+                                <div class="input-group-append" id="button-addon4">
+                                    <button class="btn btn-outline-secondary" type="button">Send</button>
+                                    <button class="btn btn-outline-secondary" type="button">More..</button>
+                                </div>
+                            </form>
                           </div>
                     </form>
                 </div>
