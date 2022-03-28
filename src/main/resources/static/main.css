@@ -1,4 +1,5 @@
 body {
+    background: url("https://thumbs.dreamstime.com/b/dark-blue-background-texture-12018606.jpg") no-repeat;
     padding: 30px 150px;
 }
 .card-view {
@@ -69,7 +70,7 @@ body {
 }
 .comment {
     top: 24px;
-    width: 280px;
+    width: 60%;
     left: 85px;
     display: flex;
     visibility: hidden;

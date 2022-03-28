@@ -7,104 +7,72 @@
     <link rel="stylesheet" href="../static/bootstrap.css">
     <link rel="stylesheet" href="../static/main.css">
     <link rel="stylesheet" th:href="@{/icon/bootstrap-icons.css}">
-    <link th:href="@{/bootstrap.js}" />
     <link rel="stylesheet" th:href="@{/bootstrap.css}" type="text/css" />
     <link rel="stylesheet" th:href="@{/main.css}" type="text/css" />
     <title>Title</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#" style="color: #b21f2d">Anonymous Posting</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/posting}"> Create <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/createUser}"> User </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"> About </a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#" style="color: #b21f2d">Anonymous Posting</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/posting}"> Create <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/createUser}"> User </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"> About </a>
+            </li>
+        </ul>
 
-    <div class="card-view">
-        <div class="card-deck">
-            <div class="card" th:each="post: ${posts}">
-                <img class="card-img-top" th:src="@{'/getImage/'+${post.imageName}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title" th:text="${post.title}">title</h5>
-                    <p id="lorem" th:text="${post.postText}">This card has supporting text below as a natural lead-in to
-                        additional content. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam a nesciunt
-                        distinctio sunt facere doloribus, ullam perferendis natus. Ipsa ullam, perferendis sequi
-                        voluptates qui dolore distinctio in laboriosam, reiciendis voluptatibus deserunt vero vitae
-                        impedit ex? Ducimus cumque nisi veritatis deserunt tenetur! Officiis quibusdam quo eligendi
-                        deserunt enim suscipit officia culpa blanditiis nam eum. Esse culpa aliquam dolorum beatae
-                        fugiat tempore unde ipsam at, dolores ea accusantium dicta quidem quaerat voluptate deleniti
-                        nobis voluptatibus earum, incidunt magni? Dolorem atque praesentium illo suscipit consequuntur a
-                        aliquam eum vero voluptates magni quae vel vitae blanditiis quam quasi commodi id aperiam velit
-                        consequatur labore, eius dolorum. Ipsa ad deserunt voluptates impedit officiis atque
-                        necessitatibus, velit non obcaecati nisi. Dolorum quaerat reprehenderit laboriosam perferendis
-                        officia ad mollitia, excepturi libero recusandae culpa eveniet neque nulla accusantium cumque
-                        repellat, deserunt labore quidem. Repudiandae velit veniam, exercitationem temporibus natus,
-                        explicabo voluptas aperiam distinctio doloribus maiores assumenda officiis iusto enim
-                        dignissimos ad sed minus ipsum. Odio debitis doloribus voluptatibus quos tempora ratione ipsum
-                        esse magni modi! Voluptas sunt dolor eligendi asperiores eum provident neque aperiam quidem
-                        iusto illo voluptatem dicta tempore aliquid cum quis voluptatum a, nihil accusamus, obcaecati
-                        necessitatibus, alias nesciunt? Aperiam fuga, officia culpa totam necessitatibus voluptatibus?
-                    </p>
-                    <p id="text"></p>
-                </div>
-                <div class="card-footer">
-                    <form class="text-muted">
-                        <input type="checkbox" id="chec">
-                        <i class="bi bi-heart bi-heart-fill"></i>
-                        <label for="chec">
-                            <i class="bi bi-chat-dots"></i>
-                        </label>
-                        <button class="btn btn-outline-primary"><a th:href="@{/view(id=${post.id})}">View</a></button>
-                        <div class="input-group comment">
-                            <form action="">
-                                <input type="text" class="form-control" placeholder="Comment . . ." />
-                                <div class="input-group-append" id="button-addon4">
-                                    <button class="btn btn-outline-secondary" type="button">Send</button>
-                                    <button class="btn btn-outline-secondary" type="button">More..</button>
-                                </div>
-                            </form>
-                          </div>
-                    </form>
-                </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="card-view">
+    <div class="card-deck">
+        <div class="card" th:each="post: ${posts}">
+            <img class="card-img-top" th:src="@{'/getImage/'+${post.imageName}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" th:text="${post.title}">title</h5>
+                <p th:text="${post.postText}"></p>
+            </div>
+            <div class="card-footer">
+                <form th:action="@{/view/{id}(id=${post.id})}" class="text-muted" method="post">
+                    <input type="checkbox" id="chec">
+                    <i class="bi bi-heart bi-heart-fill"></i>
+                    <label for="chec">
+                        <i class="bi bi-chat-dots"></i>
+                    </label>
+                    <button class="btn btn-outline-primary" name="action" value="send">View</button>
+                    <div class="input-group comment">
+                            <input type="text" class="form-control" name="comment" placeholder="Comment . . ." />
+                            <div class="input-group-append" id="button-addon4">
+                                <button class="btn btn-outline-secondary" type="submit"
+                                        name="action" value="send">Send</button>
+                                <button class="btn btn-outline-secondary" type="submit"
+                                        name="action" value="more">More..</button>
+                            </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-
-
-
-    <script>
-        let lorem = document.getElementById('lorem').innerText;
-        let arr = Array.from(lorem);
-        console.log(arr.length);
-        if (arr.length > 149) {
-            for (let i = 0; i < 150; i++) {
-                document.getElementById('text').innerHTML += arr[i];
-            }
-        } else {
-            for (let i = 0; i < arr.length; i++) {
-                document.getElementById('text').innerHTML += arr[i];
-            }
-        }
-    </script>
+</div>
 </body>
 
 </html>

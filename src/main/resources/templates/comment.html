@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/bootstrap.css">
-    <link rel="stylesheet" href="../static/comment.css">
+    <link rel="stylesheet" th:href="@{/comment.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/bootstrap.css}" type="text/css">
     <title>Comment</title>
 </head>
 
@@ -17,7 +18,7 @@
 
         <!-- Comment input -->
         <div class="comment-input">
-            <textarea id="" cols="60" rows="5" placeholder="Comment . . ."></textarea>
+            <label for=""></label><textarea id="" cols="60" rows="5" placeholder="Comment . . ."></textarea>
             <br>
             <button class="btn btn-success">Send</button>
         </div>
@@ -29,8 +30,8 @@
             <div class="card mb-3" style="max-width: 18rem;">
                 <div class="card-header">Sardording usernamesi</div>
                 <div class="card-body">
-                    <p class="card-text">Sardording jazgan commenti hamde Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Est, quisquam.</p>
+                    <p class="card-text"> Sardording jazgan commenti hamde Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Est, quisquam. </p>
                 </div>
             </div>
             <div class="card mb-3" style="max-width: 18rem;">
