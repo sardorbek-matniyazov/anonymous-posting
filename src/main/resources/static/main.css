@@ -91,3 +91,6 @@ body {
 .card-footer #chec[type = 'checkbox']:checked ~ button{
     display: none;
 }
+form {
+    padding-bottom: 40px;
+}
