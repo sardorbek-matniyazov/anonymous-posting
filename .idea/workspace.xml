@@ -4,63 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bd78cf1-c3f7-4f72-8488-349a73240f1d" name="Changes" comment="hello vcs">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/AnonymousPostingApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/config/Configurer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/controller/MainController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/controller/PhotoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/controller/PostingController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Article$ArticleBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Article.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Attachment$AttachmentBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Attachment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Comment$CommentBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Comment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Member$MemberBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Member.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/payload/Constants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/repository/ArticleRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/repository/AttachmentRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/repository/MemberRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/service/ArticleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/service/AttachmentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/service/MemberService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/094412fc-d302-446c-a34d-682bb87b7014.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/22fd3e73-faff-4492-99f8-4568de182969.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/2dc3e944-5856-45b0-ac1b-506491964b48.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/69b2bf76-808f-4417-ac38-caa2a0a0ca1d.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/6b288731-3214-4493-8329-d1be855d0834.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/83a6aaaa-bc0f-4b92-860b-f26485fed563.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/ad7f6916-4f12-4e95-9965-0adfb32ef920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/d79ea6d8-b474-4af9-91fa-0529d5cddffe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/e2504901-0ecc-4ef8-8e05-a1fc1c77682f.img" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/downloadedImages/f1089289-d84e-42a7-a8ce-0f310f8cc1f4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/createUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/viewPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/anonymousposting/AnonymousPostingApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6bd78cf1-c3f7-4f72-8488-349a73240f1d" name="Changes" comment="comment action jollar jalg'andi Sardor pushed )">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/repository/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/service/CommentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/entity/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Comment$CommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Comment$CommentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/anonymousposting/entity/Comment.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,12 +58,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.anonymousposting.repository" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -111,7 +99,15 @@
       <option name="presentableId" value="Default" />
       <updated>1648204777082</updated>
       <workItem from="1648204778326" duration="3780000" />
-      <workItem from="1648210319478" duration="245000" />
+      <workItem from="1648210319478" duration="509000" />
+      <workItem from="1648273266310" duration="648000" />
+      <workItem from="1648285409349" duration="1244000" />
+      <workItem from="1648286666335" duration="8000" />
+      <workItem from="1648286965456" duration="7217000" />
+      <workItem from="1648457071296" duration="3384000" />
+      <workItem from="1648461887645" duration="2520000" />
+      <workItem from="1648464446357" duration="917000" />
+      <workItem from="1648465995564" duration="1914000" />
     </task>
     <task id="LOCAL-00001" summary="hello vcs">
       <created>1648207984131</created>
@@ -127,8 +123,36 @@
       <option name="project" value="LOCAL" />
       <updated>1648210846344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hello vcs">
+      <created>1648210861393</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648210861393</updated>
+    </task>
+    <task id="LOCAL-00004" summary="comment action jollar jalg'andi Sardor pushed )">
+      <created>1648466048527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648466048527</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -144,6 +168,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="keyku" />
     <MESSAGE value="hello vcs" />
-    <option name="LAST_COMMIT_MESSAGE" value="hello vcs" />
+    <MESSAGE value="comment action jollar jalg'andi Sardor pushed )" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment action jollar jalg'andi Sardor pushed )" />
   </component>
 </project>

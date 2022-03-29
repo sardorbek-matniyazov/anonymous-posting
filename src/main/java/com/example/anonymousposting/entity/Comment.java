@@ -18,7 +18,7 @@ public class Comment {
     private Integer id;
 
     @Column(nullable = false, length = 1000000)
-    private String postText;
+    private String comment;
 
     private String date;
 
