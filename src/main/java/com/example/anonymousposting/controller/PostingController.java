@@ -17,6 +17,6 @@ public class PostingController {
 
     @PostMapping(value = "/newPost")
     public String post(@RequestParam("file") MultipartFile file, HttpServletRequest request, Model model){
-        return "redirect:/view?id=" + articleService.saveAndSet(file, request, model);
+        return "redirect:/view/" + articleService.saveAndSet(file, request, model);
     }
 }
