@@ -38,11 +38,6 @@ public class MainController {
         return "create";
     }
 
-    @GetMapping(value = "/comment")
-    public String comment(){
-        return "comment";
-    }
-
     @PostMapping(value = "/view/{id}")
     public String setView(@PathVariable Integer id,
                           Model model,
