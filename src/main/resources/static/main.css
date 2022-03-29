@@ -61,7 +61,7 @@ body {
 #lorem {
     display: none;
 }
-.card-footer {
+.card-footer form {
     position: relative;
 }
 .card-footer #chec {
@@ -82,7 +82,8 @@ body {
 .comment input {
     outline: none;
 }
-.card-footer #chec[type = 'checkbox']:checked ~ .comment{
+/* .card-footer form #chec[type = 'checkbox']:checked ~ .comment{ */
+.card-footer:hover .comment{
     top: 12px;
     left: 85px;
     visibility: visible;
