@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bd78cf1-c3f7-4f72-8488-349a73240f1d" name="Changes" comment="commentler jalg'andi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/controller/PostingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/anonymousposting/controller/PostingController.java" afterDir="false" />
     </list>
@@ -100,6 +101,7 @@
       <workItem from="1648461887645" duration="2520000" />
       <workItem from="1648464446357" duration="917000" />
       <workItem from="1648465995564" duration="2253000" />
+      <workItem from="1648543723185" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="hello vcs">
       <created>1648207984131</created>
@@ -136,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648474973482</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commentler jalg'andi">
+      <created>1648543841975</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648543841975</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
